@@ -1,0 +1,2 @@
+Vytvorit program ,ktorý vypise moje meno (minimalne 5 pismen ), vykreslene pomocou stvorcekov v
+zo suboru pixel
