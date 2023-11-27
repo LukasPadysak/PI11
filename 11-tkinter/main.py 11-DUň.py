@@ -1,21 +1,15 @@
-#Vytvorit program ,ktorý vypise moje meno (minimalne 5 pismen ), vykreslene pomocou stvorcekov v
-zo suboru pixel
-
-
 import tkinter as tk
 
 canvas = tk.Canvas()
 canvas.pack()
 
-# začiatok suradnice x
-x = 10
-# začiatok suradnice y
-y = 10
-#dlzka
-d = 12
-farba = "violet"
 
-#L
+x = 10
+y = 10
+d = 12
+farba = "light blue"
+
+
 canvas.create_rectangle(x,y,x+d,y+d,fill=farba)
 canvas.create_rectangle(x,y+d,x+d,y+2*d,fill=farba)
 canvas.create_rectangle(x,y+2*d,x+d,y+3*d,fill=farba)

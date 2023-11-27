@@ -10,39 +10,53 @@
 #
 #         for i in range(pocet):
 #         farba = random.choice(("green", "red", "blue", "orange"))
-#         canvas.create_rectangle(x,y,x+d,y+d, fill = farba)
-#         canvas.create_line(x,y,x+d,y+d)
+#
+# canvas.create_rectangle(x, y, x + d, y + d, fill=farba)
+#          canvas.create_line(x,y,x+d,y+d)
 #         canvas.create_line(x,y+d,x+d,y)
 #         x = x+d
-#     y = y+d
+# y = y+d
 #      x = 3
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-# canvas.mainloop()
+# #
+# #
+# #
+# #
+# #
+# #
+# #
+# #
+# #
+# #
+# #
+# # canvas.mainloop()
 
 
 import tkinter
+import random
 
 
 canvas = tkinter.Canvas(width = 800,height = 700)
 canvas.pack()
+x = 10
+y = 10
+d = 20
+pocet = 792//d
 
-canvas.create_line(150,100,200,200)
-canvas.create_line(200,200,100,200)
-canvas.create_line(100,200,150,100)
-canvas.create_rectangle(100,200,200,300)
-canvas.create_rectangle(125,225,175,275)
-canvas.create_line(150,225,150,275)
-canvas.create_line(125,250,175,275)
+for i in range (pocet):
+        farba= random.choice(("blue","green","orange"))
+
+canvas.create_line(x+d,y,x+2*d,y+2*d, fill = farba)
+canvas.create_line(x+2*d,y+2*d,x,y+2*d, fill = farba)
+canvas.create_line(x,y+2*d,x+d,y,fill = farba)
+canvas.create_rectangle(x,y+2*d,x+2*d,y+4*d, fill = farba)
+canvas.create_rectangle(x+2*d//4,y+5*d//2,x+3*d//2,y+7*d//2, fill= farba)
+canvas.create_line(x+2*d//2,y+5*d//2,x+2*d//2,y+7*d//2)
+canvas.create_line(x+2*d//4,y+6*d//2,x+3*d//2,y+6*d//2)
+x = x+d
+y = x+d
+
+
+
 
 
 
