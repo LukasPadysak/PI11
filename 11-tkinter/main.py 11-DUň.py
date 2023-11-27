@@ -1,13 +1,14 @@
 import tkinter as tk
+import random
 
-canvas = tk.Canvas()
+canvas = tk.Canvas(width = 1200,height = 800)
 canvas.pack()
 
 
 x = 10
 y = 10
-d = 12
-farba = "light blue"
+d = 20
+farba = random.choice(("sky blue","dark blue","red","purple","brown","gold"))
 
 
 canvas.create_rectangle(x,y,x+d,y+d,fill=farba)
