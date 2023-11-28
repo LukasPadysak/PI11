@@ -8,7 +8,7 @@ canvas.pack()
 x = 10
 y = 10
 d = 20
-farba = random.choice(("sky blue","dark blue","red","purple","brown","gold"))
+farba = random.choice(("sky blue","dark blue","red","brown","gold"))
 
 
 canvas.create_rectangle(x,y,x+d,y+d,fill=farba)
