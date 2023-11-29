@@ -87,8 +87,8 @@ for j in range (798//d):
         canvas.create_rectangle(x+25*d,y+6*d,x+26*d,y+7*d,fill=farba)
         canvas.create_rectangle(x+24*d,y+6*d,x+25*d,y+7*d,fill=farba)
         x = x + 30 * d
-y = y + 10 * d
-x = xx
+    y = y + 10 * d
+    x = xx
 
 
 canvas.mainloop()
