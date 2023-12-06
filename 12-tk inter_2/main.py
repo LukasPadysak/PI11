@@ -72,7 +72,7 @@
 import tkinter
 import random
 
-cv = tkinter.Canvas(width=800, height=600,bg = "darkblue")
+cv = tkinter.Canvas(width=800, height=600,bg = "orange")
 cv.pack()
 
 x = 20
